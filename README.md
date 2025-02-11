@@ -2,6 +2,8 @@
 
 ## Welcome to my personal portfolio website! You can view some of my GitHub projects, my resume, and technical skills
 
+## If you want modify this repo, you can follow steps mentioned below
+
 ## Getting Started:  
 Clone down this repository. You will need **Node.js** and **Git** installed globally on your machine.  
 
