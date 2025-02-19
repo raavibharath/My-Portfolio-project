@@ -3,7 +3,7 @@ import { Col, Row } from "react-bootstrap";
 import { DiPython, DiDatabase, DiGit, DiJava, DiJavascript1, DiNodejs, DiReact } from "react-icons/di";
 import { SiMicrosoftazure, SiPowerbi, SiPostgresql, SiDatabricks, SiApachespark, SiMicrosoftsqlserver, SiNextdotjs, SiTableau, SiSnowflake, SiMongodb } from "react-icons/si";
 import { TbApi } from "react-icons/tb";
-import { SiApacheairflow, SiApachenifi, SiApacheflink, SiKubernetes, SiDocker } from "react-icons/si"; // DevOps and Big Data tools
+import { SiApacheairflow, SiApacheflink, SiKubernetes, SiDocker } from "react-icons/si"; // DevOps and Big Data tools
 import { SiTensorflow, SiKeras, SiScikitlearn, SiPytorch } from "react-icons/si"; // AI/ML tools
 
 function Techstack() {
@@ -55,9 +55,6 @@ function Techstack() {
           <Col xs={4} md={2} className="tech-icons">
             <SiApacheflink /> {/* Apache Flink */}
           </Col>
-          <Col xs={4} md={2} className="tech-icons">
-            <SiApachenifi /> {/* Apache NiFi */}
-          </Col>
 
           {/* Data Engineering Tools */}
           <Col xs={4} md={2} className="tech-icons">
@@ -78,40 +75,4 @@ function Techstack() {
             <SiKeras /> {/* Keras */}
           </Col>
           <Col xs={4} md={2} className="tech-icons">
-            <SiScikitlearn /> {/* Scikit-learn */}
-          </Col>
-          <Col xs={4} md={2} className="tech-icons">
-            <SiPytorch /> {/* PyTorch */}
-          </Col>
-
-          {/* DevOps & Cloud */}
-          <Col xs={4} md={2} className="tech-icons">
-            <SiDocker /> {/* Docker */}
-          </Col>
-          <Col xs={4} md={2} className="tech-icons">
-            <SiKubernetes /> {/* Kubernetes */}
-          </Col>
-
-          {/* Frameworks & Additional Technologies */}
-          <Col xs={4} md={2} className="tech-icons">
-            <DiJavascript1 />
-          </Col>
-          <Col xs={4} md={2} className="tech-icons">
-            <DiReact />
-          </Col>
-          <Col xs={4} md={2} className="tech-icons">
-            <DiNodejs />
-          </Col>
-          <Col xs={4} md={2} className="tech-icons">
-            <SiNextdotjs />
-          </Col>
-          <Col xs={4} md={2} className="tech-icons">
-            <DiJava />
-          </Col>
-        </Row>
-      </Col>
-    </Row>
-  );
-}
-
-export default Techstack;
+    
