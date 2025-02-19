@@ -66,7 +66,7 @@ function About() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                3 Months Data Engineering Bootcamp
+               Professional Data Engineering Bootcamp
               </a>
             </li>
             <li>
