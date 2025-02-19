@@ -1,80 +1,59 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
-import {
-  SiVisualstudiocode,
-  SiPostman,
-  SiSlack,
-  SiMicrosoftazure,
-  SiPowerbi,
-  SiDatabricks,
-  SiJupyter,
-  SiGithub,
-  SiDocker,
-  SiKubernetes,
-  SiTensorflow,
-  SiKeras,
-  SiScikitlearn,
-  SiPytorch,
-  SiApacheairflow,
-  SiApacheflink,
-} from "react-icons/si";
+import { DiPython, DiDatabase, DiGit, DiJava, DiJavascript1, DiNodejs, DiReact } from "react-icons/di";
+import { SiMicrosoftazure, SiPowerbi, SiPostgresql, SiDatabricks, SiApachespark, SiMicrosoftsqlserver, SiNextdotjs } from "react-icons/si";
+import { TbApi } from "react-icons/tb";
 
-function Toolstack() {
+function Techstack() {
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
-      {/* Core Tools */}
+      {/* Core Skills */}
       <Col xs={4} md={2} className="tech-icons">
-        <SiMicrosoftazure /> {/* Azure DevOps, Cloud Tools */}
+        <DiPython />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiDatabricks /> {/* Databricks for Big Data Processing */}
+        <SiMicrosoftsqlserver />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiPowerbi /> {/* Power BI for Visualization */}
+        <SiPostgresql />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiJupyter /> {/* Jupyter for Python/ML Workflows */}
+        <SiMicrosoftazure />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiGithub /> {/* GitHub for Version Control */}
+        <SiPowerbi />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiPostman /> {/* API Testing */}
+        <SiDatabricks />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiVisualstudiocode /> {/* VS Code for Development */}
+        <SiApachespark />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiSlack /> {/* Slack for Team Communication */}
+        <DiGit />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <TbApi />
       </Col>
 
-      {/* Big Data & AI/ML Tools */}
+      {/* Frameworks & Additional Technologies */}
       <Col xs={4} md={2} className="tech-icons">
-        <SiApacheairflow /> {/* Apache Airflow for Workflow Orchestration */}
+        <DiJavascript1 />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiApacheflink /> {/* Apache Flink for Stream Processing */}
+        <DiReact />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiDocker /> {/* Docker for Containerization */}
+        <DiNodejs />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiKubernetes /> {/* Kubernetes for Container Orchestration */}
+        <SiNextdotjs />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiTensorflow /> {/* TensorFlow for AI/ML */}
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiKeras /> {/* Keras for AI/ML */}
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiScikitlearn /> {/* Scikit-learn for AI/ML */}
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiPytorch /> {/* PyTorch for AI/ML */}
+        <DiJava />
       </Col>
     </Row>
   );
 }
 
-export default Toolstack;
+export default Techstack;
