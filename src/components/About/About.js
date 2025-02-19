@@ -8,7 +8,9 @@ import laptopImg from "../../Assets/about.png";
 function About() {
   return (
     <Container fluid className="about-section">
+      {/* Uncomment if Particle component is needed */}
       {/* <Particle /> */}
+
       <Container>
         <Row style={{ justifyContent: "center", padding: "10px" }}>
           <Col
@@ -19,11 +21,9 @@ function About() {
               paddingBottom: "50px",
             }}
           >
-            <div>
-              <h1 style={{ fontSize: "2.1em", paddingBottom: "20px" }}>
-                Know Who <strong className="purple">I'M</strong>
-              </h1>
-            </div>
+            <h1 style={{ fontSize: "2.1em", paddingBottom: "20px" }}>
+              Know Who <strong className="purple">I'M</strong>
+            </h1>
             <Aboutcard />
           </Col>
           <Col
@@ -31,7 +31,7 @@ function About() {
             style={{ paddingTop: "120px", paddingBottom: "50px" }}
             className="about-img"
           >
-            <img src={laptopImg} alt="about" className="img-fluid" />
+            <img src={laptopImg} alt="Laptop image showing skills or tools used" className="img-fluid" />
           </Col>
         </Row>
 
@@ -66,7 +66,7 @@ function About() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-               3 Months Data Engineering Bootcamp
+                3 Months Data Engineering Bootcamp
               </a>
             </li>
             <li>
