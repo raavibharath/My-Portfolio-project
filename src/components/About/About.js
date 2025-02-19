@@ -62,6 +62,15 @@ function About() {
             </li>
             <li>
               <a
+                href="https://www.dataexpert.io/certification/braavi169774/free-bootcamp-completion"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+               3 Months Data Engineering Bootcamp
+              </a>
+            </li>
+            <li>
+              <a
                 href="https://www.hackerrank.com/certificates/a80eb241077d"
                 target="_blank"
                 rel="noopener noreferrer"
