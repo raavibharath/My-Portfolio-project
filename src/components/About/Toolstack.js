@@ -1,59 +1,45 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
-import { DiPython, DiDatabase, DiGit, DiJava, DiJavascript1, DiNodejs, DiReact } from "react-icons/di";
-import { SiMicrosoftazure, SiPowerbi, SiPostgresql, SiDatabricks, SiApachespark, SiMicrosoftsqlserver, SiNextdotjs } from "react-icons/si";
-import { TbApi } from "react-icons/tb";
+import {
+  SiVisualstudiocode,
+  SiPostman,
+  SiSlack,
+  SiMicrosoftazure,
+  SiPowerbi,
+  SiDatabricks,
+  SiJupyter,
+  SiGithub,
+} from "react-icons/si";
 
-function Techstack() {
+function Toolstack() {
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
-      {/* Core Skills */}
       <Col xs={4} md={2} className="tech-icons">
-        <DiPython />
+        <SiMicrosoftazure /> {/* Azure DevOps, Cloud Tools */}
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiMicrosoftsqlserver />
+        <SiDatabricks /> {/* Databricks for Big Data Processing */}
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiPostgresql />
+        <SiPowerbi /> {/* Power BI for Visualization */}
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiMicrosoftazure />
+        <SiJupyter /> {/* Jupyter for Python/ML Workflows */}
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiPowerbi />
+        <SiGithub /> {/* GitHub for Version Control */}
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiDatabricks />
+        <SiPostman /> {/* API Testing */}
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiApachespark />
+        <SiVisualstudiocode /> {/* VS Code for Development */}
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <DiGit />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <TbApi />
-      </Col>
-
-      {/* Frameworks & Additional Technologies */}
-      <Col xs={4} md={2} className="tech-icons">
-        <DiJavascript1 />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiReact />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiNodejs />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiNextdotjs />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiJava />
+        <SiSlack /> {/* Slack for Team Communication */}
       </Col>
     </Row>
   );
 }
 
-export default Techstack;
+export default Toolstack;
