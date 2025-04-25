@@ -39,7 +39,7 @@ function Home2() {
             <ul className="home-about-social-links d-flex justify-content-center">
               <li className="social-icons mx-2">
                 <a
-                  href="https://www.linkedin.com/in/bharathraavi/"
+                  href="https://www.linkedin.com/in/br-r/"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour home-social-icons"
