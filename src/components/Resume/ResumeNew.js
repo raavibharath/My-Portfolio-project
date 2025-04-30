@@ -9,15 +9,38 @@ pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/$
 
 function ResumeNew() {
   const [width, setWidth] = useState(1200);
+  const [numPages, setNumPages] = useState(null);
 
   useEffect(() => {
     setWidth(window.innerWidth);
   }, []);
 
+  const onLoadSuccess = ({ numPages }) => {
+    setNumPages(numPages);
+  };
+
+  const renderPages = () => {
+    let pages = [];
+    // Loop to display pages two at a time (vertically stacked)
+    for (let i = 1; i <= numPages; i += 2) {
+      pages.push(
+        <Row key={i} className="d-flex justify-content-center">
+          {/* First Page */}
+          <Page pageNumber={i} scale={width > 786 ? 1.7 : 0.6} />
+          
+          {/* Second Page, if it exists */}
+          {i + 1 <= numPages && (
+            <Page pageNumber={i + 1} scale={width > 786 ? 1.7 : 0.6} />
+          )}
+        </Row>
+      );
+    }
+    return pages;
+  };
+
   return (
     <div>
       <Container fluid className="resume-section">
-        {/* <Particle /> */}
         <Row style={{ justifyContent: "center", position: "relative" }}>
           <Button
             variant="primary"
@@ -31,8 +54,12 @@ function ResumeNew() {
         </Row>
 
         <Row className="resume">
-          <Document file={pdf} className="d-flex justify-content-center">
-            <Page pageNumber={1} scale={width > 786 ? 1.7 : 0.6} />
+          <Document
+            file={pdf}
+            className="d-flex justify-content-center"
+            onLoadSuccess={onLoadSuccess}
+          >
+            {renderPages()} {/* This will display pages sequentially */}
           </Document>
         </Row>
 
