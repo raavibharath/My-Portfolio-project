@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Container, Row } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 import pdf from "../../Assets/Bharath_Raavi_07.pdf";         
 import { AiOutlineDownload } from "react-icons/ai";
@@ -24,13 +24,17 @@ function ResumeNew() {
     // Loop to display pages two at a time (vertically stacked)
     for (let i = 1; i <= numPages; i += 2) {
       pages.push(
-        <Row key={i} className="d-flex justify-content-center">
+        <Row key={i} className="d-flex justify-content-center align-items-center">
           {/* First Page */}
-          <Page pageNumber={i} scale={width > 786 ? 1.7 : 0.6} />
+          <Col className="d-flex justify-content-center">
+            <Page pageNumber={i} scale={width > 786 ? 1.7 : 0.6} />
+          </Col>
           
           {/* Second Page, if it exists */}
           {i + 1 <= numPages && (
-            <Page pageNumber={i + 1} scale={width > 786 ? 1.7 : 0.6} />
+            <Col className="d-flex justify-content-center">
+              <Page pageNumber={i + 1} scale={width > 786 ? 1.7 : 0.6} />
+            </Col>
           )}
         </Row>
       );
@@ -53,7 +57,7 @@ function ResumeNew() {
           </Button>
         </Row>
 
-        <Row className="resume">
+        <Row className="resume d-flex justify-content-center align-items-center">
           <Document
             file={pdf}
             className="d-flex justify-content-center"
