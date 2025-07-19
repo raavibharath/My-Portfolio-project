@@ -1,65 +1,95 @@
-import { Row, Col } from "react-bootstrap";
+import React from "react";
+import { Col, Row } from "react-bootstrap";
 import {
   DiPython,
+  DiDatabase,
   DiGit,
-  DiJavascript1,
-  DiReact,
-  DiNodejs,
   DiJava,
+  DiJavascript1,
+  DiNodejs,
+  DiReact,
 } from "react-icons/di";
-
 import {
-  SiMicrosoftsqlserver,
-  SiPostgresql,
   SiMicrosoftazure,
   SiPowerbi,
+  SiPostgresql,
   SiDatabricks,
   SiApachespark,
-  SiAmazonaws,
-  SiScikitlearn,
+  SiMicrosoftsqlserver,
   SiNextdotjs,
-  SiOpenai,
-  SiPandas,
-  SiNumpy,
+  SiAmazonaws,
 } from "react-icons/si";
-
-import { TbApi } from "react-icons/tb";
+import { TbApi, TbBrain } from "react-icons/tb";
+import { FaRobot } from "react-icons/fa";
+import { GiArtificialIntelligence } from "react-icons/gi";
+import { MdTune } from "react-icons/md";
+import { BsBoxes } from "react-icons/bs";
 
 function Techstack() {
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
-      {/* Core Data Engineering Skills */}
-      <Col xs={4} md={2} className="tech-icons"><DiPython /></Col>
-      <Col xs={4} md={2} className="tech-icons"><SiMicrosoftsqlserver /></Col>
-      <Col xs={4} md={2} className="tech-icons"><SiPostgresql /></Col>
-      <Col xs={4} md={2} className="tech-icons"><SiMicrosoftazure /></Col>
-      <Col xs={4} md={2} className="tech-icons"><SiAmazonaws /></Col>
-      <Col xs={4} md={2} className="tech-icons"><SiDatabricks /></Col>
-      <Col xs={4} md={2} className="tech-icons"><SiApachespark /></Col>
-      <Col xs={4} md={2} className="tech-icons"><SiPowerbi /></Col>
-      <Col xs={4} md={2} className="tech-icons"><DiGit /></Col>
+      {/* Core Skills */}
+      <Col xs={4} md={2} className="tech-icons" title="Python">
+        <DiPython />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons" title="SQL Server">
+        <SiMicrosoftsqlserver />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons" title="PostgreSQL">
+        <SiPostgresql />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons" title="Azure">
+        <SiMicrosoftazure />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons" title="Power BI">
+        <SiPowerbi />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons" title="Databricks">
+        <SiDatabricks />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons" title="Apache Spark">
+        <SiApachespark />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons" title="Git">
+        <DiGit />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons" title="REST APIs">
+        <TbApi />
+      </Col>
 
-      {/* API / Data Access */}
-      <Col xs={4} md={2} className="tech-icons"><TbApi /></Col>
+      {/* Frameworks & Libraries */}
+      <Col xs={4} md={2} className="tech-icons" title="JavaScript">
+        <DiJavascript1 />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons" title="React">
+        <DiReact />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons" title="Node.js">
+        <DiNodejs />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons" title="Next.js">
+        <SiNextdotjs />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons" title="Java">
+        <DiJava />
+      </Col>
 
-      {/* AI & ML Tools */}
-      <Col xs={4} md={2} className="tech-icons"><SiOpenai /></Col> {/* OpenAI / GPT-4 */}
-      <Col xs={4} md={2} className="tech-icons"><SiScikitlearn /></Col>
-      <Col xs={4} md={2} className="tech-icons"><SiPandas /></Col>
-      <Col xs={4} md={2} className="tech-icons"><SiNumpy /></Col>
-
-      {/* AI Concepts as Labels */}
-      <Col xs={4} md={2} className="tech-icons">🧠 Ollama (Local LLMs)</Col>
-      <Col xs={4} md={2} className="tech-icons">📚 RAG with LangChain</Col>
-      <Col xs={4} md={2} className="tech-icons">🧠 Context Window / Prompt Design</Col>
-      <Col xs={4} md={2} className="tech-icons">    LLM Tokenization</Col>
-
-      {/* Web & Scripting Tools */}
-      <Col xs={4} md={2} className="tech-icons"><DiJavascript1 /></Col>
-      <Col xs={4} md={2} className="tech-icons"><DiReact /></Col>
-      <Col xs={4} md={2} className="tech-icons"><DiNodejs /></Col>
-      <Col xs={4} md={2} className="tech-icons"><SiNextdotjs /></Col>
-      <Col xs={4} md={2} className="tech-icons"><DiJava /></Col>
+      {/* Bonus: AI/ML, AWS, RAG, Ollama, Fine-Tuning */}
+      <Col xs={4} md={2} className="tech-icons" title="AWS">
+        <SiAmazonaws />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons" title="RAG (Retrieval-Augmented Generation)">
+        <TbBrain />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons" title="Fine-Tuning">
+        <MdTune />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons" title="AI / ML">
+        <GiArtificialIntelligence />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons" title="Ollama / OpenAI Models">
+        <FaRobot />
+      </Col>
     </Row>
   );
 }
