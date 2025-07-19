@@ -24,10 +24,10 @@ function Home2() {
               LET ME <span className="purple"> INTRODUCE </span> MYSELF
             </h1>
             <p className="home-about-body">
-              Experienced Data Analyst with a Master’s in Business Analytics from Saint Peter’s University. Skilled in reporting, data analysis, and transforming complex data into actionable insights.
+              Azure & Databricks Specialist
+              Strategic and detail-oriented Senior Data Engineer with a Master’s in Business Analytics from Saint Peter’s University, bringing deep expertise in designing, developing, and optimizing data pipelines on Azure. Adept at delivering scalable data solutions using Databricks (PySpark/Scala), Delta Lake, and Azure Data Factory, with strong cross-functional understanding of both engineering and analytical workflows.
               <br />
-              <br />Proficient in SQL, Azure Data Engineering, Python, and machine learning for data manipulation and analysis. Experienced in building and optimizing data pipelines using Azure Data Lake, Databricks, and Synapse Analytics. Passionate about leveraging data to create innovative solutions, drive business decisions, and support strategic growth.
-            </p>
+              <br />Proficient in SQL, Python, and Spark, with a proven track record of transforming raw data into reliable, production-ready datasets for analytics, reporting, and machine learning. Experienced in implementing robust data architectures using Azure Data Lake Storage, Synapse Analytics, and ADF, enabling real-time insights and data-driven decision-making.
           </Col>
         </Row>
         <Row>
