@@ -7,7 +7,11 @@ function AboutCard() {
     <Card className="quote-card-view">
       <Card.Body>
         <p>
-        Experienced in Data Feild with a Master of Science in Business Analytics from Saint Peter’s University. Proficient in designing and implementing pipelines, integrating data from diverse sources, and transforming raw data into actionable insights. Skilled in SQL, Azure Data Engineering, and tools like Azure Data Factory, Databricks, and Synapse Analytics for data processing, ETL workflows, and reporting. Certified Azure AI Engineer Associate and Azure Data Engineer Associate, with expertise in business intelligence, cloud-based solutions, and Power BI. Passionate about leveraging data analytics, machine learning, and AI to drive data-driven decision-making and innovation.
+        Experienced data professional with a Master degree, currently working as a Data Engineer at Johnson & Johnson. Leading critical data platform migration from traditional Hive metastore to Unity Catalog in Databricks, while simultaneously supporting enhancements to existing data pipelines and solutions.
+
+        Proficient in designing and implementing end to end ETL pipelines, integrating data from multiple structured and unstructured sources. Hands-on expertise in Azure Data Engineering tools, including Azure Data Factory, Databricks (PySpark/Scala), and Synapse Analytics.
+
+        Certified Azure Data Engineer Associate and Azure AI Engineer Associate, with strong experience in Power BI, cloud-based data solutions, and AI/ML integration. Passionate about leveraging big data and AI to drive innovation, strategic insights, and business growth in fast-paced, data-driven environments
         </p>
         <footer className="blockquote-footer">Bharath Raavi</footer>
       </Card.Body>
