@@ -28,7 +28,7 @@ function Home2() {
                 Azure & Databricks Specialist: Strategic and detail-oriented Senior Data Engineer with a Master’s in Business Analytics from Saint Peter’s University, bringing deep expertise in designing, developing, and optimizing data pipelines on Azure. Adept at delivering scalable data solutions using Databricks (PySpark/Scala), Delta Lake, and Azure Data Factory, with strong cross-functional understanding of both engineering and analytical workflows.
                 <br />
                 Proficient in SQL, Python, and Spark, with a proven track record of transforming raw data into reliable, production-ready datasets for analytics, reporting, and machine learning. Experienced in implementing robust data architectures using Azure Data Lake Storage, Synapse Analytics, and ADF, enabling real-time insights and data-driven decision-making.
-          </Col>
+            </Col>
         </Row>
         <Row>
           <Col md={12} className="home-about-social">
